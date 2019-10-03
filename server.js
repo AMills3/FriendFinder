@@ -1,8 +1,11 @@
+// Dependencies
 var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
 
+// Create express app instance
 var app = express();
+// Set the port of the app
 var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
