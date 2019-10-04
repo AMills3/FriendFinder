@@ -13,9 +13,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+// Set routes to other pages
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
+// Start server to begin listening for requests
 app.listen(PORT, function () {
     console.log("App is listening on PORT: " + PORT);
 });
