@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en us">
+
+<head>
+
+<meta charset = "UTF-8">
+    <title>Survey</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+    <h2>Survey Questions</h2>
+    <br>
+
+    <h3><strong>About You</strong></h3>
+    <h4>Name</h4>
+    <input type="text" name="" id="name" class="form-control" required >
+
+    <input type="text" name="" id="photo" class="form-control" required >
+    <br>
+
+    <h2>Question 1</h2>
+    <h3>You prefer reading a book over playing video games.</h3>
+    <select data-placeholder="" class="chosen-select" id="q1">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h2>Question 2</h2>
+    <h3>You are into working out and fitness.</h3>
+    <select data-placeholder="" class="chosen-select" id="q2">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h2>Question 3</h2>
+    <h3>You are into nutrition and watching your diet.</h3>
+    <select data-placeholder="" class="chosen-select" id="q3">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h2>Question 4</h2>
+    <h3>You don't mind spending time alone.</h3>
+    <select data-placeholder="" class="chosen-select" id="q4">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h2>Question 5</h2>
+    <h3>You get mad easily.</h3>
+    <select data-placeholder="" class="chosen-select" id="q5">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h2>Question 6</h2>
+    <h3>You enjoy watching and talking about sports.</h3>
+    <select data-placeholder="" class="chosen-select" id="q6">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <h2>Question 7</h2>
+    <h3>You value truth.</h3>
+    <select data-placeholder="" class="chosen-select" id="q7">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h2>Question 8</h2>
+    <h3>You manage money well.</h3>
+    <select data-placeholder="" class="chosen-select" id="q8">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h2>Question 9</h2>
+    <h3>You enjoy a night with friends and alcohol.</h3>
+    <select data-placeholder="" class="chosen-select" id="q9">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h2>Question 10</h2>
+    <h3>You can sleep til Noon and not feel ashamed.</h3>
+    <select data-placeholder="" class="chosen-select" id="q10">
+    <option value=""></option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
+
+    <div class="modal-body">
+    <p id="bestName"></p>
+    <img src="" alt="Best Match Photo" id="bestPhoto" style="width: 100%">
+    </div>
+
+    <footer class="footer">
+    <a href="./">Home Page</a> | 
+    <a href="./api/friends">API Profile List</a> | 
+    <a href=https://github.com/AMills3/FriendFinder>Github</a>
+    </footer>
+
+    </div>
+
+    </body>
+
+    </html>
+
+    <script type="text/javascript">
+        $("#submit-button").on("click", function(event) {
+            event.preventDefault();
+
+    var userAnswers = {
+    name: $("#name").val(),
+    photo: $("#photo").val(),
+    scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val(), 
+            ]
+        };
+
+    $.post("/api/friends", userAnswers, function(data) {
+		$("#bestName").text(data.name);
+		$("#bestPhoto").attr("src", data.photo);
+	});
+});
+</script>
